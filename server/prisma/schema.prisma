@@ -13,6 +13,7 @@ model User {
   id        String   @id @default(cuid())
   lastName  String?
   password  String
+  phone     String?
   roles     String[]
   updatedAt DateTime @updatedAt
   username  String   @unique
