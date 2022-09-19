@@ -9,6 +9,10 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
+import { FerList } from "./fer/FerList";
+import { FerCreate } from "./fer/FerCreate";
+import { FerEdit } from "./fer/FerEdit";
+import { FerShow } from "./fer/FerShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -41,6 +45,13 @@ const App = (): React.ReactElement => {
           edit={UserEdit}
           create={UserCreate}
           show={UserShow}
+        />
+        <Resource
+          name="Fer"
+          list={FerList}
+          edit={FerEdit}
+          create={FerCreate}
+          show={FerShow}
         />
       </Admin>
     </div>
